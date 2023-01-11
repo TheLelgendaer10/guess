@@ -109,7 +109,7 @@ input {margin-top: 10em;
 }
 
 #current-number {
-  background-color: red;
+ /* background-color: red; */
   height: 80px;
   width: 310px;
   position: absolute;
@@ -119,12 +119,15 @@ input {margin-top: 10em;
   text-align: center;
   vertical-align: middle;
   line-height: 80px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
 }
 
 #smaller-larger {
-  background-color: greenyellow;
+  /*background-color: greenyellow;*/
   height: 80px;
-  width: 80px;
+  width: 500px;
   position: absolute;
   top: 55%;
   left: 62%;
@@ -132,10 +135,13 @@ input {margin-top: 10em;
   text-align: center;
   vertical-align: middle;
   line-height: 80px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
 }
 
 #previous-numbers {
-  background-color: pink;
+  /*background-color: pink;*/
   height: 60px;
   width: 200px;
   position: absolute;
@@ -148,7 +154,7 @@ input {margin-top: 10em;
 }
 
 #previous-smaller-larger {
-  background-color: blue;
+  /*background-color: blue;*/
   height: 60px;
   width: 60px;
   position: absolute;
