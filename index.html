@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="previous-numbers"></div>
+    <div id="previous-smaller-larger"></div>
+    <div id="current-number"></div>
+    <div id="smaller-larger"></div>
+    <div id="number-input">
+        <input type="number" id="number-input-field"></input>
+        <button id="guess-button" onclick="guessNumber();"><span>GUESS!</span></button>
+        <div id="slider-container">
+            <input type="range" min="0" max="1000" value="50" class="slider" id="my-range" class="slider" step="10">
+            <div id="my-range-output">120</div>
+            <button id="confirm-range" onclick="startGame()">confirm</button>
+        </div>
+    </div>
+<script src="app.js"></script>    
+</body>
+</html>

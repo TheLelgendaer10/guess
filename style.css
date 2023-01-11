@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root {
+    --bg-color: #1f1f1f;
+  }
+  
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+#number-input {
+    position : absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {margin-top: 10em;
+    color: #1f1f1f;
+    border: none;
+    background: #eeeeee;
+    padding-left: 1em;
+    width: 20em;
+    height: 4em;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#guess-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #1f1f1f;
+    border: none;
+    border-radius: 20px;
+    width: 7.5em;
+    height: 6em;
+    position: absolute;
+    margin-top: 14em;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eeeeee;
+    font-size: 0.7em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#my-range {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #3a3a3a;
+  outline: none;
+  opacity: 1;;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #1f1f1f ;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #1f1f1f;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+#my-range-output {
+  color: #3a3a3a;
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#confirm-range {
+  font-weight: bold;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-color: #3a3a3a;
+  color: #1f1f1f;
+  position: absolute;
+  top: 180%;
+  left: 125%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 12px;
+}
+
+#current-number {
+  background-color: red;
+  height: 80px;
+  width: 310px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+#smaller-larger {
+  background-color: greenyellow;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 55%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+#previous-numbers {
+  background-color: pink;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+}
+
+#previous-smaller-larger {
+  background-color: blue;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 45%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #5078dd;
+  }
+  
+::selection {
+    color: white;
+    background: #5078dd;
+  }
